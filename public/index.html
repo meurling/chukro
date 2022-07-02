@@ -12,24 +12,24 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
-<body id='body' class="font-gta" >
-    <div class="bg-black  w-full text-gray-50 h-32  sticky top-0 transition ease-in-out delay-150">
+<body id='body' class="font-gta no-scrollbar" >
+    <div class="bg-black  w-full text-gray-50 h-20 md:h-32  sticky top-0 transition ease-in-out delay-150">
         <nav class="grid grid-cols-3 justify-items-center items-center h-full" >
             <div>
                
             </div>
             <div class="h-1/2">
-                <a href="file:///home/axel/projects/chukro/public/index.html" ><img src="../src/imgs/chukro.png" class="invert object-contain h-full " /></a>
+                <a href="index.html" ><img src="../src/imgs/chukro.png" class="invert object-contain h-full " /></a>
             </div>
             <div class="space-x-4 text-lg">
                 <ul class="grid grid-cols-3 space-x-4 justify-items-center" >
                     <li >
-                        <a href="file:///home/axel/projects/chukro/public/priser.html" >
+                        <a href="./priser.html" >
                             Priser
                         </a>
                     </li>
                     <li >
-                        <a href="file:///home/axel/projects/chukro/public/kontakt.html" >
+                        <a href="./kontakt.html" >
                             Kontakt
                         </a>
                     </li>
@@ -46,39 +46,49 @@
 
 
     <div class="bg-black"  >
-        <div class="grid grid-cols-2 text-white top-0 " >
-            <div class=" h-screen" >
-                <img src="../src/imgs/jony.jpg" class="h-full object-fill w-full" />
-            </div>
-            <div class="bg-black h-screen grid grid-rows-6 text-center">
-                <div class="row-start-5 grid-flow-row grid justify-items-center w-1/2 justify-self-center">
-                    <a class="font-gta" >
-                        Hos Chukro förser vi våra gäster med skräddarsydda tjänster efter vår kunds personlighet och stil.
-                    </a>
-                    <button class="h-10 w-16 bg-black border-2 transition delay-75 hover:bg-white hover:text-black border-gray shadow hover:shadow-white">
-                        Boka
-                    </button>
+        <div class="text-white top-0 " >
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class=" h-screen" >
+                    <img src="../src/imgs/jony.jpg" class="h-full object-fill w-full" />
                 </div>
-                
-            </div>
-            <div class="h-screen text-center w-full bg-black grid">
-                <div class="w-2/3 justify-self-center self-center" >
-                    <a class="font-gta" >
-                        Salong Chukro är en fullservicesalong belägen mitt på Östermalm Brunnsgatan 4. Chukro grundades av frisören Jony Chukro. Det är här som vi välkomnar och vi ser till att du bekantar dig med vår underbara atmosfär och de omfattande tjänster vi erbjuder. 
-                    </a>
+                <div class="bg-black h-screen flex justify-center text-center items-center">
+                    <div class="flex-col flex justify-center items-center space-y-4">
+                        <a class="font-gta md:w-2/3" >
+                            Hos Chukro förser vi våra gäster med skräddarsydda tjänster efter vår kunds personlighet och stil.
+                        </a>
+                        <button class="h-10 w-16 bg-black border-2 transition delay-75 hover:bg-white hover:text-black border-gray shadow hover:shadow-white">
+                            Boka
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="bg-black h-screen" >
-                <img src="../src/imgs/jobb.png" class="h-full object-fill w-full" />
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="h-screen md:order-2" >
+                    <img src="../src/imgs/jobb.png" class="h-full object-fill w-full" />
+                </div>
+                <div class="h-screen text-center flex justify-center items-center md:order-1">
+                    <div class="w-2/3 align-middle" >
+                        <a >
+                            Salong Chukro är en fullservicesalong belägen mitt på Östermalm Brunnsgatan 4. Chukro grundades av frisören Jony Chukro. Det är här som vi välkomnar och vi ser till att du bekantar dig med vår underbara atmosfär och de omfattande tjänster vi erbjuder. 
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class=" h-screen" >
-                <img src="../src/imgs/studio.png" class="h-full object-fill w-full" />
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class=" h-screen" >
+                    <img src="../src/imgs/studio.png" class="h-full object-fill w-full" />
+                </div>
+                <div class="bg-black h-screen text-center w-full flex items-center justify-center">
+                    <a class="row-start-4 w-2/3" >
+                        Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting, extensions och personlig service vars mål är att överträffa förväntningarna.
+                    </a>
+                </div>
             </div>
-            <div class="bg-black h-screen grid grid-rows-6 text-center w-1/2 justify-self-center">
-                <a class="row-start-4 " >
-                    Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting, extensions och personlig service vars mål är att överträffa förväntningarna.
-                </a>
-            </div>
+
         </div> 
     </div>
 </body>
