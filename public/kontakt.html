@@ -13,40 +13,63 @@
 </head>
 
 <body class="font-gta bg-black">
-    <div class="bg-black  w-full text-gray-50 h-32  sticky top-0 transition ease-in-out delay-150">
-        <nav class="grid grid-cols-3 justify-items-center items-center h-full" >
-            <div>
-               
-            </div>
-            <div class="h-1/2">
-                <a href="file:///home/axel/projects/chukro/public/index.html" ><img src="../src/imgs/chukro.png" class="invert object-contain h-full " /></a>
-            </div>
-            <div class="space-x-4 text-lg">
-                <ul class="grid grid-cols-3 space-x-4 justify-items-center" >
-                    <li >
-                        <a href="file:///home/axel/projects/chukro/public/priser.html" >
-                            Priser
+    <!-- Navbar goes here -->
+    <nav class="bg-white shadow-lg">
+        <div class="">
+            <div class="flex justify-between mx-3 md:px-10">
+                <div class="flex flex-row w-full justify-between md:px-30">
+                    <div class="col-span-1">
+                        <!-- Website Logo -->
+                        <a href="./" class="flex  ">
+                            <img src="/src/imgs/chukro.png" alt="Logo" class="h-16 w-32 md:h-24 md:w-64  object-contain">
                         </a>
-                    </li>
-                    <li >
-                        <a href="file:///home/axel/projects/chukro/public/kontakt.html" >
-                            Kontakt
-                        </a>
-                    </li>
-                    <li  >
-                        <a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank">
-                            Boka
-                        </a>
-                    </li>
-                </ul>
-                
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1 ">
+                        <a href="./priser.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Priser</a>
+                        <a href="./kontakt.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Kontakt</a>
+                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300" target="_blank">Boka</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-black "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="./priser.html" class="active block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Priser</a></li>
+                <li><a href="./kontakt.html" class="block text-sm px-2 py-4  bg-black text-white  ">Kontakt</a></li>
+                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Boka</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
     
     <div class="bg-black h-screen font-gta text-gray-100" >
         <div class="justify-items-center grid grid-cols-3 mt-10 bg-black " >
-            <div class="text-left grid grid-flow-row  space-y-3 col-start-2 border-2 border-gray-100 px-8 py-6">
+            <div class="text-left grid grid-flow-row  space-y-3 col-start-2 border-2 border-gray-100 px-8 py-6 mt-10">
                 <h3 class="text-gray-100 text-4xl text-center" >Kontakt</h3>
                 <div></div>
                 <div>

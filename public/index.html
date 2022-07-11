@@ -3,92 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="./styles.css" rel="stylesheet">
-    <title>Chukro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- Mobile Specific Metas
+    <link href="./styles.css" rel="stylesheet">
+    <title>Chukro Frisör Östermalm</title>
+
+    <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
-<body id='body' class="font-gta no-scrollbar" >
-    <div class="bg-black  w-full text-gray-50 h-20 md:h-32  sticky top-0 transition ease-in-out delay-150">
-        <nav class="grid grid-cols-3 justify-items-center items-center h-full" >
-            <div>
-               
-            </div>
-            <div class="h-1/2">
-                <a href="index.html" ><img src="../src/imgs/chukro.png" class="invert object-contain h-full " /></a>
-            </div>
-            <div class="space-x-4 text-lg">
-                <ul class="grid grid-cols-3 space-x-4 justify-items-center" >
-                    <li >
-                        <a href="./priser.html" >
-                            Priser
-                        </a>
-                    </li>
-                    <li >
-                        <a href="./kontakt.html" >
-                            Kontakt
-                        </a>
-                    </li>
-                    <li  >
-                        <a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank">
-                            Boka
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
-        </nav>
-    </div>
+<body id='body' class="font-gta no-scrollbar">
 
 
-    <div class="bg-black"  >
-        <div class="text-white top-0 " >
+    <!-- Navbar goes here -->
+    <nav class="bg-white shadow-lg">
+        <div class="">
+            <div class="flex justify-between mx-3 md:px-10">
+                <div class="flex flex-row w-full justify-between md:px-30">
+                    <div class="col-span-1">
+                        <!-- Website Logo -->
+                        <a href="#" class="flex  ">
+                            <img src="/src/imgs/chukro.png" alt="Logo" class="h-16 w-32 md:h-24 md:w-64  object-contain">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1 ">
+                        <a href="./priser.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Priser</a>
+                        <a href="./kontakt.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Kontakt</a>
+                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300" target="_blank">Boka</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-black "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="./priser.html" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Priser</a></li>
+                <li><a href="./kontakt.html" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Kontakt</a></li>
+                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Boka</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+
+
+    <div class="bg-black">
+        <div class="text-white ">
 
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class=" h-screen" >
+                <div class=" h-screen">
                     <img src="../src/imgs/jony.jpg" class="h-full object-fill w-full" />
                 </div>
                 <div class="bg-black h-screen flex justify-center text-center items-center">
                     <div class="flex-col flex justify-center items-center space-y-4">
-                        <a class="font-gta md:w-2/3" >
-                            Hos Chukro förser vi våra gäster med skräddarsydda tjänster efter vår kunds personlighet och stil.
+                        <a class="font-gta md:w-2/3">
+                            Hos Chukro förser vi våra gäster med skräddarsydda tjänster efter vår kunds personlighet och
+                            stil.
                         </a>
-                        <button class="h-10 w-16 bg-black border-2 transition delay-75 hover:bg-white hover:text-black border-gray shadow hover:shadow-white">
+                        <button
+                            onclick="openBoka()"
+                            class="h-10 w-16 bg-black border-2 transition delay-75 hover:bg-white hover:text-black border-gray shadow hover:shadow-white">
                             Boka
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
 
+            <script>
+                function openBoka() {
+                    window.open("https://www.bokadirekt.se/places/chukro-46221", "_blank")
+                }
+            </script>
+
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="h-screen md:order-2" >
+                <div class="h-screen md:order-2">
                     <img src="../src/imgs/jobb.png" class="h-full object-fill w-full" />
                 </div>
                 <div class="h-screen text-center flex justify-center items-center md:order-1">
-                    <div class="w-2/3 align-middle" >
-                        <a >
-                            Salong Chukro är en fullservicesalong belägen mitt på Östermalm Brunnsgatan 4. Chukro grundades av frisören Jony Chukro. Det är här som vi välkomnar och vi ser till att du bekantar dig med vår underbara atmosfär och de omfattande tjänster vi erbjuder. 
+                    <div class="w-2/3 align-middle">
+                        <a>
+                            Salong Chukro är en fullservicesalong belägen mitt på Östermalm Brunnsgatan 4. Chukro
+                            grundades av frisören Jony Chukro. Det är här som vi välkomnar och vi ser till att du
+                            bekantar dig med vår underbara atmosfär och de omfattande tjänster vi erbjuder.
                         </a>
                     </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class=" h-screen" >
-                    <img src="../src/imgs/studio.png" class="h-full object-fill w-full" />
+                <div class=" h-screen">
+                    <img src="../src/imgs/smile.jpg" class="h-full object-fill w-full" />
                 </div>
                 <div class="bg-black h-screen text-center w-full flex items-center justify-center">
-                    <a class="row-start-4 w-2/3" >
-                        Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting, extensions och personlig service vars mål är att överträffa förväntningarna.
+                    <a class="row-start-4 w-2/3">
+                        Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting,
+                        extensions och personlig service vars mål är att överträffa förväntningarna.
                     </a>
                 </div>
             </div>
 
-        </div> 
+        </div>
     </div>
 </body>
