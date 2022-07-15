@@ -21,24 +21,24 @@
     <nav class="bg-white shadow-lg">
         <div class="">
             <div class="flex justify-between mx-3 md:px-10">
-                <div class="flex flex-row w-full justify-between md:px-30">
+                <div class="flex flex-row justify-between w-full md:px-30">
                     <div class="col-span-1">
                         <!-- Website Logo -->
-                        <a href="#" class="flex  ">
-                            <img src="/src/imgs/chukro.png" alt="Logo" class="h-16 w-32 md:h-24 md:w-64  object-contain">
+                        <a href="#" class="flex ">
+                            <img src="/src/imgs/chukro.png" alt="Logo" class="object-contain w-32 h-16 md:h-24 md:w-64">
                         </a>
                     </div>
                     <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1 ">
-                        <a href="./priser.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Priser</a>
-                        <a href="./kontakt.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Kontakt</a>
-                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300" target="_blank">Boka</a>
+                    <div class="items-center hidden space-x-1 md:flex ">
+                        <a href="./priser.html" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black">Priser</a>
+                        <a href="./kontakt.html" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black">Kontakt</a>
+                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black" target="_blank">Boka</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
+                <div class="flex items-center md:hidden">
                     <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-500 hover:text-black "
+                    <svg class="w-6 h-6 text-gray-500 hover:text-black"
                         x-show="!showMenu"
                         fill="none"
                         stroke-linecap="round"
@@ -56,9 +56,9 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="./priser.html" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Priser</a></li>
-                <li><a href="./kontakt.html" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Kontakt</a></li>
-                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Boka</a></li>
+                <li><a href="./priser.html" class="block px-2 py-4 text-sm transition duration-300 hover:bg-gray-700 hover:text-white">Priser</a></li>
+                <li><a href="./kontakt.html" class="block px-2 py-4 text-sm transition duration-300 hover:bg-gray-700 hover:text-white">Kontakt</a></li>
+                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block px-2 py-4 text-sm transition duration-300 hover:bg-gray-700 hover:text-white">Boka</a></li>
             </ul>
         </div>
         <script>
@@ -77,18 +77,18 @@
         <div class="text-white ">
 
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class=" h-screen">
-                    <img src="../src/imgs/jony.jpg" class="h-full object-fill w-full" />
+                <div class="h-screen ">
+                    <img src="../src/imgs/jony.jpg" class="object-fill w-full h-full" />
                 </div>
-                <div class="bg-black h-screen flex justify-center text-center items-center">
-                    <div class="flex-col flex justify-center items-center space-y-4">
+                <div class="flex items-center justify-center h-screen text-center bg-black">
+                    <div class="flex flex-col items-center justify-center space-y-4">
                         <a class="font-gta md:w-2/3">
                             Hos Chukro förser vi våra gäster med skräddarsydda tjänster efter vår kunds personlighet och
                             stil.
                         </a>
                         <button
                             onclick="openBoka()"
-                            class="h-10 w-16 bg-black border-2 transition delay-75 hover:bg-white hover:text-black border-gray shadow hover:shadow-white">
+                            class="w-16 h-10 transition delay-75 bg-black border-2 shadow hover:bg-white hover:text-black border-gray hover:shadow-white">
                             Boka
                         </button>
                     </div>
@@ -104,9 +104,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="h-screen md:order-2">
-                    <img src="../src/imgs/jobb.png" class="h-full object-fill w-full" />
+                    <img src="../src/imgs/jobb.png" class="object-fill w-full h-full" />
                 </div>
-                <div class="h-screen text-center flex justify-center items-center md:order-1">
+                <div class="flex items-center justify-center h-screen text-center md:order-1">
                     <div class="w-2/3 align-middle">
                         <a>
                             Salong Chukro är en fullservicesalong belägen mitt på Östermalm Brunnsgatan 4. Chukro
@@ -118,12 +118,12 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class=" h-screen">
-                    <img src="../src/imgs/smile.jpg" class="h-full object-fill w-full" />
+                <div class="h-screen ">
+                    <img src="../src/imgs/smile.jpg" class="object-fill w-full h-full" />
                 </div>
-                <div class="bg-black h-screen text-center w-full flex items-center justify-center">
-                    <a class="row-start-4 w-2/3">
-                        Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting,
+                <div class="flex items-center justify-center w-full h-screen text-center bg-black">
+                    <a class="w-2/3 row-start-4">
+                        Vi förser stolt våra gäster med precisionsklippning, styling, detaljerad highlighting/slingor,
                         extensions och personlig service vars mål är att överträffa förväntningarna.
                     </a>
                 </div>
