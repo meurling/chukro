@@ -12,29 +12,29 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
-<body class="font-gta bg-black">
+<body class="bg-black font-gta">
     <!-- Navbar goes here -->
     <nav class="bg-white shadow-lg">
         <div class="">
             <div class="flex justify-between mx-3 md:px-10">
-                <div class="flex flex-row w-full justify-between md:px-30">
+                <div class="flex flex-row justify-between w-full md:px-30">
                     <div class="col-span-1">
                         <!-- Website Logo -->
-                        <a href="./" class="flex  ">
-                            <img src="/src/imgs/chukro.png" alt="Logo" class="h-16 w-32 md:h-24 md:w-64  object-contain">
+                        <a href="./" class="flex ">
+                            <img src="./imgs/chukro.png" alt="Logo" class="object-contain w-32 h-16 md:h-24 md:w-64">
                         </a>
                     </div>
                     <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1 ">
-                        <a href="./priser.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Priser</a>
-                        <a href="./kontakt.html" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300">Kontakt</a>
-                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="py-4 px-2 text-gray-500  hover:text-black transition duration-300" target="_blank">Boka</a>
+                    <div class="items-center hidden space-x-1 md:flex ">
+                        <a href="./priser.html" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black">Priser</a>
+                        <a href="./kontakt.html" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black">Kontakt</a>
+                        <a href="https://www.bokadirekt.se/places/chukro-46221" class="px-2 py-4 text-gray-500 transition duration-300 hover:text-black" target="_blank">Boka</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
+                <div class="flex items-center md:hidden">
                     <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-500 hover:text-black "
+                    <svg class="w-6 h-6 text-gray-500 hover:text-black"
                         x-show="!showMenu"
                         fill="none"
                         stroke-linecap="round"
@@ -52,9 +52,9 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="./priser.html" class="active block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Priser</a></li>
-                <li><a href="./kontakt.html" class="block text-sm px-2 py-4  bg-black text-white  ">Kontakt</a></li>
-                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Boka</a></li>
+                <li><a href="./priser.html" class="block px-2 py-4 text-sm transition duration-300 active hover:bg-gray-700 hover:text-white">Priser</a></li>
+                <li><a href="./kontakt.html" class="block px-2 py-4 text-sm text-white bg-black ">Kontakt</a></li>
+                <li><a href="https://www.bokadirekt.se/places/chukro-46221" target="_blank" class="block px-2 py-4 text-sm transition duration-300 hover:bg-gray-700 hover:text-white">Boka</a></li>
             </ul>
         </div>
         <script>
@@ -67,10 +67,10 @@
         </script>
     </nav>
     
-    <div class="bg-black h-screen font-gta text-gray-100" >
-        <div class="justify-items-center grid grid-cols-3 mt-10 bg-black " >
-            <div class="text-left grid grid-flow-row  space-y-3 col-start-2 border-2 border-gray-100 px-8 py-6 mt-10">
-                <h3 class="text-gray-100 text-4xl text-center" >Kontakt</h3>
+    <div class="h-screen text-gray-100 bg-black font-gta" >
+        <div class="grid grid-cols-3 mt-10 bg-black justify-items-center " >
+            <div class="grid grid-flow-row col-start-2 px-8 py-6 mt-10 space-y-3 text-left border-2 border-gray-100">
+                <h3 class="text-4xl text-center text-gray-100" >Kontakt</h3>
                 <div></div>
                 <div>
                     <a>
@@ -78,12 +78,12 @@
                     </a>
                 </div>
                 <div>
-                    <a>
+                    <a href="tel:0709491999">
                         0709491999
                     </a>
                 </div>
                 <div>
-                    <a>
+                    <a href="mailto:jonychukro@gmail.com">
                         jonychukro@gmail.com
                     </a>
                 </div>
